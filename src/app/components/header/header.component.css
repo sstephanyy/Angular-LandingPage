@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.app-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+}
+
+.navbar-links{
+    list-style: none;
+    display: flex;
+    gap: 34px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    color: #8f8f9c;
+}
