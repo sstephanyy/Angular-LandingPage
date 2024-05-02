@@ -1,0 +1,83 @@
+section {
+    width: 100%;
+    height: 100vh; /* Altura total da tela */
+    position: relative; /* Posicionamento relativo para o pseudo-elemento */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -180px;
+    background-image: url('/assets/bgElement.png');
+    background-size: 1118px 967px; /* Tamanho específico para a imagem */
+    background-repeat: no-repeat;
+    background-position: left center;
+    transform: rotate(-21.46deg); /* Rotação da imagem */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da seção */
+}
+
+.text-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-elements h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+
+}
+
+.text-elements p{
+    font-size: 18px;
+    font-weight: 200;
+    color: #7D7987;
+    margin-top: 24px;
+    max-width: 60%;
+    margin-bottom: 80px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    align-items: center; /* Centraliza os cartões verticalmente */
+    flex-wrap: wrap;
+    max-width: calc(3 * (350px + 2 * 10px)); /* Largura de 3 cartões incluindo margem */
+    margin: auto; 
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 37px;
+    margin-bottom: 18px;
+}
+
+
+.card > p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #7D7987;
+}
+
+
+
