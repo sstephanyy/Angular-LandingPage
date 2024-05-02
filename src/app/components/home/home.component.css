@@ -1,0 +1,67 @@
+.main-section{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 330px;
+
+}
+
+.illustration img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+  
+}
+
+.illustration {
+    display: flex; 
+    justify-content: end; 
+    align-items: center;
+}
+
+.illustration img {
+    max-width: 100%; /* Permite que a imagem cresça até o máximo do container */
+    max-height: 100%; /* Permite que a imagem cresça verticalmente até o máximo do container */
+    width: auto; /* Mantém a proporção da imagem ao ajustar a largura */
+    height: auto; /* Mantém a proporção da imagem ao ajustar a altura */
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 11px; 
+    align-items: flex-start; /* Alinha os itens ao início do container flexível */
+    justify-content: flex-start; /* Justifica o conteúdo ao início, o que pode ajudar a visualizar o gap */
+    min-height: 200px; /* Define uma altura mínima para o container */
+}
+
+
+.headline h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+}
+
+
+.headline p {
+    font-weight: 200;
+    font-size: 20px;
+    color: #7D7987;
+    max-width: 455px;
+
+}
+
+
+.headline button {
+    margin-top: 20px;
+    padding: 17px 49px;
+    border-radius: 27px;
+    background-color: #458FF6;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
