@@ -1,0 +1,3 @@
+interface ContactResponse{
+    message: string;
+}

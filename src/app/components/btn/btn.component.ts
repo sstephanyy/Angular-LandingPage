@@ -14,6 +14,7 @@ export class BtnComponent {
   @Input() withBg: boolean = true;
   @Output("submit") onSubmit = new EventEmitter();
   @Input() loading: boolean = false;
+  @Output() disabled: boolean = false;
 
   submit(){
     this.onSubmit.emit();

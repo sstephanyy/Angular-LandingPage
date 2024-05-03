@@ -1,4 +1,4 @@
-<button class="btn" (click)="submit()" [ngClass]="{'withBg': withBg, 'withoutBg': !withBg}">
+<button class="btn" (click)="submit()" [ngClass]="{'withBg': withBg, 'withoutBg': !withBg}" [disabled]="loading">
     @if(!loading){
         {{ btnText }}
     }@else{
