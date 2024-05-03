@@ -18,4 +18,8 @@ export class ContactFormComponent {
       email: new FormControl('', [Validators.required, Validators.email])
     });
   }
+
+  onSubmit(){
+    console.log(this.contactForm.value);
+  }
 }

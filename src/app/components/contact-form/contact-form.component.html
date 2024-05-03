@@ -7,9 +7,13 @@
     </div>
     <form [formGroup]="contactForm">
         <label for="nome">Nome</label>
-        <input id="nome" FormControlName="nome"/>
+        <input id="nome" formControlName="nome"/>
         <label for="email">Email</label>
-        <input id="email" FormControlName="email"/>
-        <app-btn btn-text="Entrar em contato" [withBg]="false" style="margin-top: 30px;"></app-btn>
+        <input id="email" formControlName="email"/>
+        <app-btn btn-text="Entrar em contato" 
+        [withBg]="false" 
+        (submit)="onSubmit()"
+        style="margin-top: 30px;">
+        </app-btn>
     </form>
 </section>
