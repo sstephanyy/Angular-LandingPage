@@ -1,22 +1,22 @@
 section {
     width: 100%;
-    height: 100vh; /* Altura total da tela */
     position: relative; /* Posicionamento relativo para o pseudo-elemento */
+
 }
 
 section::before {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: calc(50% - 90px); 
     bottom: 0;
     left: -180px;
     background-image: url('/assets/bgElement.png');
-    background-size: 1118px 967px; /* Tamanho específico para a imagem */
+    background-size: 1118px 967px; 
     background-repeat: no-repeat;
     background-position: left center;
-    transform: rotate(-21.46deg); /* Rotação da imagem */
-    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da seção */
+    transform: rotate(-21.46deg); 
+    z-index: -1; 
 }
 
 .text-elements{
