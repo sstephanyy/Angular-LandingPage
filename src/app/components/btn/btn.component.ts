@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 
 @Component({
@@ -12,4 +12,10 @@ import { Component, Input } from '@angular/core';
 export class BtnComponent {
   @Input("btn-text") btnText: string = '';
   @Input() withBg: boolean = true;
+  @Output("submit") onSubmit = new EventEmitter();
+  @Input() loading: boolean = false;
+
+  submit(){
+    this.onSubmit.emit();
+  }
 }

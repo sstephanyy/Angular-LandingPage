@@ -1,3 +1,7 @@
-<button class="btn" [ngClass]="{'withBg': withBg, 'withoutBg': !withBg}">
-    {{ btnText }}
+<button class="btn" (click)="submit()" [ngClass]="{'withBg': withBg, 'withoutBg': !withBg}">
+    @if(!loading){
+        {{ btnText }}
+    }@else{
+        <span>Carregando...</span>
+    }
 </button>
